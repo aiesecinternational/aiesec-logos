@@ -7,8 +7,8 @@ type Props = {
 		fileType: string,
 		url: string
 	}[]
-	background: "blue" | "white" | "black"
-	buttonColor: "blue" | "white" | "black"
+	background: "blue" | "white" | "black" | "teal" | "orange" | "red"
+	buttonColor: "blue" | "white" | "black" | "teal" | "orange" | "red"
 }
 
 export default function LogoBox(props:Props) {
@@ -22,9 +22,21 @@ export default function LogoBox(props:Props) {
 		bg = "bg-gradient-to-br from-gray-800 to-gray-700";
 	}
 	
+	if (props.background === "teal") {
+		bg = "bg-gradient-to-br from-[#0cb9c1] to-[#0cb9c1]";
+	}
+	
+	if (props.background === "orange") {
+		bg = "bg-gradient-to-br from-[#f48924] to-[#ff6d00]";
+	}
+	
+	if (props.background === "red") {
+		bg = "bg-gradient-to-br from-[#f85a40] to-[#e84a30]";
+	}
+	
 	return (
 		<div>
-			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 w-72 h-72 rounded-md border-2 border-gray-300`}>
+			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 pb-5 w-72 h-72 rounded-md border-2 border-gray-300`}>
 				<Image src={props.downloads.find(download => download.fileType === "PNG")!.url}
 					   width={200}
 					   height={200}
