@@ -121,6 +121,24 @@ export default function Home() {
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/GV HORIZONTAL BLACK.png",
             }
         ],
+        "am-horizontal-color": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AM HORIZONTAL COLOR.png",
+            }
+        ],
+        "am-horizontal-white": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AM HORIZONTAL WHITE.png",
+            }
+        ],
+        "am-horizontal-black": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AM HORIZONTAL BLACK.png",
+            }
+        ],
         "gta-without-font-color": [
             {
                 fileType: "PNG",
@@ -167,6 +185,12 @@ export default function Home() {
                     <LogoBox name={"Global Volunteer Logo Horizontal Color"} downloads={logos["gv-horizontal-color"]} background={"white"} buttonColor={"red"}/>
                     <LogoBox name={"Global Volunteer Logo Horizontal White"} downloads={logos["gv-horizontal-white"]} background={"red"} buttonColor={"white"}/>
                     <LogoBox name={"Global Volunteer Logo Horizontal Black"} downloads={logos["gv-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                </LogoCategory>
+                
+                <LogoCategory>
+                    <LogoBox name={"AIESEC Member Logo Horizontal Color"} downloads={logos["am-horizontal-color"]} background={"white"} buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Member Logo Horizontal White"} downloads={logos["am-horizontal-white"]} background={"blue"} buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Member Logo Horizontal Black"} downloads={logos["am-horizontal-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 {/*<LogoCategory>*/}
