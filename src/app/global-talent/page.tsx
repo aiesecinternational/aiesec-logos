@@ -202,68 +202,68 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Logo Top Right Color"} downloads={logos["gta-top-right-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Logo Top Right White"} downloads={logos["gta-top-right-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Logo Top Right Black"} downloads={logos["gta-top-right-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Logo Top Right Color"} downloads={logos["gta-top-right-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Logo Top Right White"} downloads={logos["gta-top-right-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Logo Top Right Black"} downloads={logos["gta-top-right-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Logo Vertical Color"} downloads={logos["gta-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
-                    <LogoBox name={"Global Talent Logo Vertical White"} downloads={logos["gta-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Global Talent Logo Vertical Black"} downloads={logos["gta-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo Vertical Color"} downloads={logos["gta-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo Vertical White"} downloads={logos["gta-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo Vertical Black"} downloads={logos["gta-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Logo without Font Color"} downloads={logos["gta-without-font-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
-                    <LogoBox name={"Global Talent Logo without Font White"} downloads={logos["gta-without-font-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Global Talent Logo without Font Black"} downloads={logos["gta-without-font-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo without Font Color"} downloads={logos["gta-without-font-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo without Font White"} downloads={logos["gta-without-font-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Logo without Font Black"} downloads={logos["gta-without-font-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Watermark Color"} downloads={logos["gta-watermark-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
-                    <LogoBox name={"Global Talent Watermark White"} downloads={logos["gta-watermark-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Watermark Color"} downloads={logos["gta-watermark-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Watermark White"} downloads={logos["gta-watermark-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Partly Remote Logo Horizontal Color"} downloads={logos["gta-pr-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Partly Remote Horizontal White"} downloads={logos["gta-pr-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Partly Remote Horizontal Black"} downloads={logos["gta-pr-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Logo Horizontal Color"} downloads={logos["gta-pr-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Horizontal White"} downloads={logos["gta-pr-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Horizontal Black"} downloads={logos["gta-pr-horizontal-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Partly Remote Logo Top Right Color"} downloads={logos["gta-pr-top-right-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Partly Remote Logo Top Right White"} downloads={logos["gta-pr-top-right-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Partly Remote Logo Top Right Black"} downloads={logos["gta-pr-top-right-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Logo Top Right Color"} downloads={logos["gta-pr-top-right-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Logo Top Right White"} downloads={logos["gta-pr-top-right-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Logo Top Right Black"} downloads={logos["gta-pr-top-right-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Partly Remote Logo Vertical Color"} downloads={logos["gta-pr-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
-                    <LogoBox name={"Global Talent Partly Remote Vertical White"} downloads={logos["gta-pr-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Global Talent Partly Remote Vertical Black"} downloads={logos["gta-pr-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Logo Vertical Color"} downloads={logos["gta-pr-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Vertical White"} downloads={logos["gta-pr-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Partly Remote Vertical Black"} downloads={logos["gta-pr-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Remote Logo Horizontal Color"} downloads={logos["gta-r-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Remote Horizontal White"} downloads={logos["gta-r-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Remote Horizontal Black"} downloads={logos["gta-r-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Remote Logo Horizontal Color"} downloads={logos["gta-r-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Remote Horizontal White"} downloads={logos["gta-r-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Remote Horizontal Black"} downloads={logos["gta-r-horizontal-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Remote Logo Top Right Color"} downloads={logos["gta-r-top-right-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Remote Logo Top Right White"} downloads={logos["gta-r-top-right-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Remote Logo Top Right Black"} downloads={logos["gta-r-top-right-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Remote Logo Top Right Color"} downloads={logos["gta-r-top-right-color"]} background={"white"} buttonColor={"teal"}/>
+                    <LogoBox name={"Global Teacher Remote Logo Top Right White"} downloads={logos["gta-r-top-right-white"]} background={"teal"} buttonColor={"white"}/>
+                    <LogoBox name={"Global Teacher Remote Logo Top Right Black"} downloads={logos["gta-r-top-right-black"]} background={"white"} buttonColor={"black"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Remote Logo Vertical Color"} downloads={logos["gta-r-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
-                    <LogoBox name={"Global Talent Remote Vertical White"} downloads={logos["gta-r-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Global Talent Remote Vertical Black"} downloads={logos["gta-r-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Remote Logo Vertical Color"} downloads={logos["gta-r-vertical-color"]} background={"white"} buttonColor={"teal"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Remote Vertical White"} downloads={logos["gta-r-vertical-white"]} background={"teal"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"Global Teacher Remote Vertical Black"} downloads={logos["gta-r-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
                 </LogoCategory>
             
             </div>
