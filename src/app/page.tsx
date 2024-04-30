@@ -1,5 +1,6 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import MoreVariantsBox from "@/components/MoreVariantsBox";
 
 export default function Home() {
     const logos = {
@@ -161,7 +162,7 @@ export default function Home() {
     
     return (
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
-            <div className={"flex flex-col space-y-5 h-full w-full items-start justify-center"}>
+            <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
                     <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"} buttonColor={"blue"}/>
                     <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"}/>
@@ -173,24 +174,28 @@ export default function Home() {
                     <LogoBox name={"Global Talent Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
                     <LogoBox name={"Global Talent Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
                     <LogoBox name={"Global Talent Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <MoreVariantsBox url={"/global-talent"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"teal"} buttonColor={"white"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
                     <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gte-horizontal-color"]} background={"white"} buttonColor={"orange"}/>
                     <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gte-horizontal-white"]} background={"orange"} buttonColor={"white"}/>
                     <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gte-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <MoreVariantsBox url={"/global-teacher"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"orange"} buttonColor={"white"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
                     <LogoBox name={"Global Volunteer Logo Horizontal Color"} downloads={logos["gv-horizontal-color"]} background={"white"} buttonColor={"red"}/>
                     <LogoBox name={"Global Volunteer Logo Horizontal White"} downloads={logos["gv-horizontal-white"]} background={"red"} buttonColor={"white"}/>
                     <LogoBox name={"Global Volunteer Logo Horizontal Black"} downloads={logos["gv-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <MoreVariantsBox url={"/global-volunteer"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"red"} buttonColor={"white"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
                     <LogoBox name={"AIESEC Member Logo Horizontal Color"} downloads={logos["am-horizontal-color"]} background={"white"} buttonColor={"blue"}/>
                     <LogoBox name={"AIESEC Member Logo Horizontal White"} downloads={logos["am-horizontal-white"]} background={"blue"} buttonColor={"white"}/>
                     <LogoBox name={"AIESEC Member Logo Horizontal Black"} downloads={logos["am-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <MoreVariantsBox url={"/aiesec-member"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
                 </LogoCategory>
                 
                 {/*<LogoCategory>*/}

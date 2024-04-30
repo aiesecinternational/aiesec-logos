@@ -9,10 +9,13 @@ type Props = {
 	}[]
 	background: "blue" | "white" | "black" | "teal" | "orange" | "red"
 	buttonColor: "blue" | "white" | "black" | "teal" | "orange" | "red"
+	size?: "small" | "medium" | "large"
 }
 
 export default function LogoBox(props:Props) {
 	let bg = "bg-gradient-to-br from-white to-gray-100";
+	const size = props.size ? props.size : "medium";
+	const height = size === "small" ? "100" : size === "medium" ? "200" : "500";
 	
 	if (props.background === "blue") {
 		bg = "bg-gradient-to-br from-blue-600 to-blue-500";
@@ -38,7 +41,7 @@ export default function LogoBox(props:Props) {
 		<div>
 			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 pb-5 w-72 h-72 rounded-md border-2 border-gray-300`}>
 				<Image src={props.downloads.find(download => download.fileType === "PNG")!.url}
-					   width={200}
+					   width={height}
 					   height={200}
 					   alt={props.name}
 				/>
