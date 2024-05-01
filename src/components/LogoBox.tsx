@@ -7,7 +7,7 @@ type Props = {
 		fileType: string,
 		url: string
 	}[]
-	background: "blue" | "white" | "black" | "teal" | "orange" | "red"
+	background: "blue" | "white" | "black" | "teal" | "orange" | "red" | "blue-plain" | "white-plain"
 	buttonColor: "blue" | "white" | "black" | "teal" | "orange" | "red"
 	size?: "small" | "medium" | "large"
 }
@@ -35,6 +35,14 @@ export default function LogoBox(props:Props) {
 	
 	if (props.background === "red") {
 		bg = "bg-gradient-to-br from-[#f85a40] to-[#e84a30]";
+	}
+	
+	if (props.background === "blue-plain") {
+		bg = "bg-[#037ef3]";
+	}
+	
+	if (props.background === "white-plain") {
+		bg = "bg-white";
 	}
 	
 	return (

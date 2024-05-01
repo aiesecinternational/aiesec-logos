@@ -68,6 +68,38 @@ export default function Home() {
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC Logo White_Black.mov",
             },
         ],
+        "aiesec-human-white": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-White.png",
+            },
+            {
+                fileType: "JPG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-White.jpg",
+            },
+            {
+                fileType: "AI",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-White.ai",
+            }
+        ],
+        "aiesec-human-blue": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-Blue.png",
+            },
+            {
+                fileType: "JPG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-Blue.jpg",
+            },
+            {
+                fileType: "AI",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-Blue.ai",
+            },
+            {
+                fileType: "MOV",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Walk (Converted).mov",
+            }
+        ],
         "gta-horizontal-color": [
             {
                 fileType: "PNG",
@@ -168,6 +200,13 @@ export default function Home() {
                     <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"}/>
                     <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"} buttonColor={"black"}/>
                     <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]} background={"black"} buttonColor={"white"}/>
+                    <MoreVariantsBox url={"/aiesec-logo"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
+                </LogoCategory>
+                
+                <LogoCategory>
+                    <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Human Logo Blue"} downloads={logos["aiesec-human-blue"]} background={"blue-plain"} buttonColor={"white"}/>
+                    <MoreVariantsBox url={"/aiesec-human"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
                 </LogoCategory>
                 
                 <LogoCategory>

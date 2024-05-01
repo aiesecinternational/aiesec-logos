@@ -32,7 +32,7 @@ export default function MoreVariantsBox(props:Props) {
 	
 	return (
 		<div>
-			<div className={`relative flex flex-col items-center justify-center p-0 w-72 h-72 rounded-md`}>
+			<div className={`relative flex flex-col items-center justify-center p-0 w-36 h-72 rounded-md`}>
 				<div className={"flex flex-row text-white font-bold text-xs items-center justify-between space-x-5"}>
 					<div className={"flex flex-col space-x-2 items-center space-y-5"}>
 						<LinkChip text={"More Variants"} url={props.url} variant={props.background}/>
