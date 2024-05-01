@@ -1,6 +1,7 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
 import MoreVariantsBox from "@/components/MoreVariantsBox";
+import ColorBox from "@/components/ColorBox";
 
 export default function Home() {
     const logos = {
@@ -202,6 +203,18 @@ export default function Home() {
                     <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]} background={"black"} buttonColor={"white"}/>
                     <MoreVariantsBox url={"/aiesec-logo"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
                 </LogoCategory>
+                
+                <div className={`flex flex-row bg-white w-full p-5 rounded-md border-2 border-gray-300 space-x-5`}>
+                    <ColorBox variant={"blue"}/>
+                    <ColorBox variant={"teal"}/>
+                    <ColorBox variant={"orange"}/>
+                    <ColorBox variant={"red"}/>
+                    <ColorBox variant={"purple"}/>
+                    <ColorBox variant={"green"}/>
+                    <ColorBox variant={"yellow"}/>
+                    <ColorBox variant={"dark-gray"}/>
+                    <ColorBox variant={"light-gray"}/>
+                </div>
                 
                 <LogoCategory>
                     <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"}/>

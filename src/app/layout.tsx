@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {ReactNode} from "react";
-import Header from "@/components/Header";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import '@mantine/notifications/styles.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
