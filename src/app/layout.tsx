@@ -28,7 +28,7 @@ export default async function RootLayout({
                     {/*<Header/>*/}
         
                     <div className={`flex flex-row flex-grow text-gray-800 md:w-full`}>
-                        <div className={`flex flex-row flex-grow justify-center p-5`}>
+                        <div className={`flex flex-row flex-grow justify-center items-center p-5`}>
                             <MantineProvider>{children}</MantineProvider>
                         </div>
                     </div>

@@ -58,7 +58,7 @@ export default function ColorBox(props: Props) {
 	}
 	
 	return (
-		<div className={`flex flex-col space-y-5 w-32 h-32 ${bgColor} rounded-md items-center justify-center text-sm ${textColor}`}>
+		<div className={`flex flex-col space-y-5 w-full md:w-32 h-32 ${bgColor} rounded-md items-center justify-center text-sm ${textColor}`}>
 			<div>{hex}</div>
 			<CopyChip value={hex} variant="white" />
 		</div>

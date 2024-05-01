@@ -2,6 +2,7 @@ import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
 import MoreVariantsBox from "@/components/MoreVariantsBox";
 import ColorBox from "@/components/ColorBox";
+import MobileLogoBox from "@/components/MobileLogoBox";
 
 export default function Home() {
     const logos = {
@@ -194,17 +195,19 @@ export default function Home() {
     }
     
     return (
-        <div className={"flex flex-col space-y-5 items-center justify-center"}>
-            <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
+        <div className={"flex flex-col space-y-5 items-center justify-center w-full"}>
+            <div className={"flex flex-col md:space-y-20 h-full w-full items-center justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"}/>
-                    <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"} buttonColor={"black"}/>
-                    <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]} background={"black"} buttonColor={"white"}/>
-                    <MoreVariantsBox url={"/aiesec-logo"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"} buttonColor={"blue"} priority={true} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"} priority={true} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"} buttonColor={"black"} priority={true} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]} background={"black"} buttonColor={"white"} priority={true} hideOnMobile={true}/>
+                    <MoreVariantsBox url={"/aiesec-logo"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"black"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"AIESEC Logo White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/White-Blue-Logo.png"} background={"blue"} url={"/aiesec-logo"}/>
                 </LogoCategory>
                 
-                <div className={`flex flex-row bg-white w-full p-5 rounded-md border-2 border-gray-300 space-x-5`}>
+                <div className={`flex-col md:flex-row bg-white p-5 rounded-md border-2 border-gray-300 md:space-x-5 space-y-5 md:space-y-0 hidden md:flex`}>
                     <ColorBox variant={"blue"}/>
                     <ColorBox variant={"teal"}/>
                     <ColorBox variant={"orange"}/>
@@ -216,45 +219,57 @@ export default function Home() {
                     <ColorBox variant={"light-gray"}/>
                 </div>
                 
+                <div
+                    className={`md:hidden mt-8 mb-3`}>
+                    <MobileLogoBox name={"AIESEC Colours"}
+                                   image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/aiesec-colors.png"}
+                                   background={"white-plain"} url={"/colours"}/>
+                </div>
+                
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Human Logo Blue"} downloads={logos["aiesec-human-blue"]} background={"blue-plain"} buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Human Logo Blue"} downloads={logos["aiesec-human-blue"]} background={"blue-plain"} buttonColor={"white"} hideOnMobile={true}/>
                     <MoreVariantsBox url={"/aiesec-human"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"AIESEC Human Logo White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/AIESEC-Human-White.png"} background={"white-plain"} url={"/aiesec-human"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Talent Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Talent Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Talent Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Talent Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Talent Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Talent Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"} hideOnMobile={true}/>
                     <MoreVariantsBox url={"/global-talent"} variants={["Without font", "Vertical", "Partly Remote", "Watermark", "Russian", "Spanish"]} background={"teal"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"Global Talent Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/GTA HORIZONTAL WHITE.png"} background={"teal"} url={"/global-talent"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gte-horizontal-color"]} background={"white"} buttonColor={"orange"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gte-horizontal-white"]} background={"orange"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gte-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gte-horizontal-color"]} background={"white"} buttonColor={"orange"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gte-horizontal-white"]} background={"orange"} buttonColor={"white"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gte-horizontal-black"]} background={"white"} buttonColor={"black"} hideOnMobile={true}/>
                     <MoreVariantsBox url={"/global-teacher"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"orange"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"Global Teacher Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/GTE HORIZONTAL WHITE.png"} background={"orange"} url={"/global-teacher"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Global Volunteer Logo Horizontal Color"} downloads={logos["gv-horizontal-color"]} background={"white"} buttonColor={"red"}/>
-                    <LogoBox name={"Global Volunteer Logo Horizontal White"} downloads={logos["gv-horizontal-white"]} background={"red"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Volunteer Logo Horizontal Black"} downloads={logos["gv-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Volunteer Logo Horizontal Color"} downloads={logos["gv-horizontal-color"]} background={"white"} buttonColor={"red"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Volunteer Logo Horizontal White"} downloads={logos["gv-horizontal-white"]} background={"red"} buttonColor={"white"} hideOnMobile={true}/>
+                    <LogoBox name={"Global Volunteer Logo Horizontal Black"} downloads={logos["gv-horizontal-black"]} background={"white"} buttonColor={"black"} hideOnMobile={true}/>
                     <MoreVariantsBox url={"/global-volunteer"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"red"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"Global Volunteer Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/GV HORIZONTAL WHITE.png"} background={"red"} url={"/global-volunteer"}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Member Logo Horizontal Color"} downloads={logos["am-horizontal-color"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Member Logo Horizontal White"} downloads={logos["am-horizontal-white"]} background={"blue"} buttonColor={"white"}/>
-                    <LogoBox name={"AIESEC Member Logo Horizontal Black"} downloads={logos["am-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"AIESEC Member Logo Horizontal Color"} downloads={logos["am-horizontal-color"]} background={"white"} buttonColor={"blue"} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Member Logo Horizontal White"} downloads={logos["am-horizontal-white"]} background={"blue"} buttonColor={"white"} hideOnMobile={true}/>
+                    <LogoBox name={"AIESEC Member Logo Horizontal Black"} downloads={logos["am-horizontal-black"]} background={"white"} buttonColor={"black"} hideOnMobile={true}/>
                     <MoreVariantsBox url={"/aiesec-member"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
+                    
+                    <MobileLogoBox name={"AIESEC Member Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/AM HORIZONTAL WHITE.png"} background={"blue"} url={"/aiesec-member"}/>
                 </LogoCategory>
                 
-                {/*<LogoCategory>*/}
-                {/*    <LogoBox name={"Global Talent Logo without Font Color"} downloads={logos["gta-without-font-color"]} background={"white"} buttonColor={"teal"}/>*/}
-                {/*    <LogoBox name={"Global Talent Logo without Font White"} downloads={logos["gta-without-font-white"]} background={"teal"} buttonColor={"white"}/>*/}
-                {/*    <LogoBox name={"Global Talent Logo without Font Black"} downloads={logos["gta-without-font-black"]} background={"white"} buttonColor={"black"}/>*/}
-                {/*</LogoCategory>*/}
             </div>
         </div>
     );
