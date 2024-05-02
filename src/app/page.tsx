@@ -196,7 +196,7 @@ export default function Home() {
     
     return (
         <div className={"flex flex-col space-y-5 items-center justify-center w-full"}>
-            <div className={"flex flex-col md:space-y-20 h-full w-full items-center justify-center"}>
+            <div className={"flex flex-col space-y-5 md:space-y-20 h-full w-full items-center justify-center"}>
                 <LogoCategory>
                     <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"} buttonColor={"blue"} priority={true} hideOnMobile={true}/>
                     <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"} priority={true} hideOnMobile={true}/>
@@ -220,7 +220,7 @@ export default function Home() {
                 </div>
                 
                 <div
-                    className={`md:hidden mt-8 mb-3`}>
+                    className={`md:hidden`}>
                     <MobileLogoBox name={"AIESEC Colours"}
                                    image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/aiesec-colors.png"}
                                    background={"white-plain"} url={"/colours"}/>
@@ -268,6 +268,17 @@ export default function Home() {
                     <MoreVariantsBox url={"/aiesec-member"} variants={["Without font", "Watermark", "Russian", "Spanish"]} background={"blue"} buttonColor={"white"}/>
                     
                     <MobileLogoBox name={"AIESEC Member Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/AM HORIZONTAL WHITE.png"} background={"blue"} url={"/aiesec-member"}/>
+                </LogoCategory>
+                
+                <LogoCategory spacing={true}>
+                    <MobileLogoBox name={"Youth Speak Logo Horizontal White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/YS HORIZONTAL WHITE.png"} background={"purple"} url={"/youth-speak"} showOnDesktop={true}/>
+                    <MobileLogoBox name={"H4TF Logo White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/H4TF HORIZONTAL WHITE.png"} background={"green"} url={"/h4tf"} showOnDesktop={true}/>
+                </LogoCategory>
+                
+                <LogoCategory spacing={true}>
+                    <MobileLogoBox name={"AIESEC Why White"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/aiesec-way.jpg"} background={"white-plain"} url={"/aiesec-way"} showOnDesktop={true}/>
+                    <MobileLogoBox name={"AIESEC 2025 Logo Color"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/A2025%2BLogo_Color.png"} background={"white-plain"} url={"/a2025"} showOnDesktop={true}/>
+                    <MobileLogoBox name={"Regions"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/regions.png"} background={"white-plain"} url={"/regions"} showOnDesktop={true}/>
                 </LogoCategory>
                 
             </div>

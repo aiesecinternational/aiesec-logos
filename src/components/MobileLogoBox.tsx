@@ -3,11 +3,12 @@ import Link from "next/link";
 
 type Props = {
 	name: string,
-	background: "blue" | "white" | "black" | "teal" | "orange" | "red" | "blue-plain" | "white-plain"
+	background: "blue" | "white" | "black" | "teal" | "orange" | "red" | "blue-plain" | "white-plain" | "purple" | "green"
 	size?: "small" | "medium" | "large"
 	priority?: boolean
 	image: string
 	url: string
+	showOnDesktop?: boolean
 }
 
 export default function MobileLogoBox(props:Props) {
@@ -15,6 +16,7 @@ export default function MobileLogoBox(props:Props) {
 	const size = props.size ? props.size : "medium";
 	const height = size === "small" ? "100" : size === "medium" ? "200" : "500";
 	const priority = props.priority ? props.priority : false;
+	const showOnDesktop = props.showOnDesktop ? props.showOnDesktop : false;
 	
 	if (props.background === "blue") {
 		bg = "bg-gradient-to-br from-blue-600 to-blue-500";
@@ -44,10 +46,18 @@ export default function MobileLogoBox(props:Props) {
 		bg = "bg-white";
 	}
 	
+	if (props.background === "purple") {
+		bg = "bg-gradient-to-br from-[#7552CC] to-[#5E3AB4FF]";
+	}
+	
+	if (props.background === "green") {
+		bg = "bg-gradient-to-br from-[#00c16e] to-[#008c50]";
+	}
+	
 	return (
 		<div>
 			<Link href={props.url}>
-				<div className={`relative flex flex-col items-center justify-center ${bg} p-0 w-72 h-72 rounded-md border-2 border-gray-300 md:hidden`}>
+				<div className={`relative flex flex-col items-center justify-center ${bg} p-0 w-72 h-72 rounded-md border-2 border-gray-300 ${showOnDesktop ? "" : "md:hidden"}`}>
 					<Image src={props.image}
 						   width={height}
 						   height={200}

@@ -1,12 +1,14 @@
 import CopyChip from "@/components/CopyChip";
 
 type Props = {
-	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray"
+	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa"
+	size?: "small" | "medium" | "large"
 }
 
 export default function ColorBox(props: Props) {
 	let bgColor = "bg-[#037ef3]";
 	let textColor = "text-white";
+	const size = props.size ? props.size : "medium";
 	let hex = "#037EF3";
 	
 	if (props.variant === "teal") {
@@ -57,8 +59,32 @@ export default function ColorBox(props: Props) {
 		hex = "#f5f5f5";
 	}
 	
+	if (props.variant === "americas") {
+		bgColor = "bg-[#bb0d00]";
+		textColor = "text-white";
+		hex = "#bb0d00";
+	}
+	
+	if (props.variant === "asia-pacific") {
+		bgColor = "bg-[#30c39e]";
+		textColor = "text-white";
+		hex = "#30c39e";
+	}
+	
+	if (props.variant === "europe") {
+		bgColor = "bg-[#674ea7]";
+		textColor = "text-white";
+		hex = "#674ea7";
+	}
+	
+	if (props.variant === "middle-east-and-africa") {
+		bgColor = "bg-[#e69138]";
+		textColor = "text-white";
+		hex = "#e69138";
+	}
+	
 	return (
-		<div className={`flex flex-col space-y-5 w-full md:w-32 h-32 ${bgColor} rounded-md items-center justify-center text-sm ${textColor}`}>
+		<div className={`flex flex-col space-y-5 w-full ${size == "large" ? "md:w-72 h-72" : "md:w-32 h-32"} ${bgColor} rounded-md items-center justify-center text-sm ${textColor}`}>
 			<div>{hex}</div>
 			<CopyChip value={hex} variant="white" />
 		</div>

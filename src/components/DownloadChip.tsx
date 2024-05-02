@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
 	fileType: string
 	url: string
-	variant: "blue" | "white" | "black" | "teal" | "orange" | "red"
+	variant: "blue" | "white" | "black" | "teal" | "orange" | "red" | "purple" | "green" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa"
 }
 
 export default function DownloadChip(props: Props) {
@@ -11,7 +11,7 @@ export default function DownloadChip(props: Props) {
 	let textColor = "text-gray-800";
 	
 	if (props.variant === "blue") {
-		bgColor = "bg-blue-600";
+		bgColor = "bg-[#037EF3]";
 		textColor = "text-white";
 	}
 	
@@ -35,9 +35,39 @@ export default function DownloadChip(props: Props) {
 		textColor = "text-white";
 	}
 	
+	if (props.variant === "purple") {
+		bgColor = "bg-[#7c4dff]";
+		textColor = "text-white";
+	}
+	
+	if (props.variant === "green") {
+		bgColor = "bg-[#00c16e]";
+		textColor = "text-white";
+	}
+	
+	if (props.variant === "americas") {
+		bgColor = "bg-[#bb0d00]";
+		textColor = "text-white";
+	}
+	
+	if (props.variant === "asia-pacific") {
+		bgColor = "bg-[#30c39e]";
+		textColor = "text-white";
+	}
+	
+	if (props.variant === "europe") {
+		bgColor = "bg-[#674ea7]";
+		textColor = "text-white";
+	}
+	
+	if (props.variant === "middle-east-and-africa") {
+		bgColor = "bg-[#e69138]";
+		textColor = "text-white";
+	}
+	
 	return (
 		<Link href={props.url} target={"_blank"}>
-			<div className={`rounded-full ${bgColor} ${textColor} bg-opacity-85 hover:bg-opacity-100 px-4 py-1 transition-all`}>{props.fileType}</div>
+			<div className={`rounded-full ${bgColor} ${textColor} bg-opacity-100 hover:bg-opacity-85 px-4 py-1 transition-all`}>{props.fileType}</div>
 		</Link>
 	);
 }

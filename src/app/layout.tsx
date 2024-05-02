@@ -5,6 +5,7 @@ import {ReactNode} from "react";
 import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/notifications/styles.css';
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +37,10 @@ export default async function RootLayout({
         
                     <div className={`flex text-gray-900 text-sm font-light justify-center p-3`}>
                         <div>
-                            developed by AIESEC International with 💙
+                            developed by AIESEC International with 💙 | To learn how to use the logos, visit
+                            <Link href={"https://drive.google.com/drive/folders/1uMvyMsiKSkNO78ZXm1KD1rNPAHnx7sNc?usp=drive_link"}>
+                                <span className={"px-2 py-1 ml-2 text-xs text-white rounded-full bg-blue-600"}>aies.ec/bluebook</span>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function LinkChip(props: Props) {
 	let textColor = "text-gray-800";
 	
 	if (props.variant === "blue") {
-		bgColor = "bg-blue-600";
+		bgColor = "bg-[#037EF3]";
 		textColor = "text-white";
 	}
 	
@@ -37,7 +37,7 @@ export default function LinkChip(props: Props) {
 	
 	return (
 		<Link href={props.url}>
-			<div className={`rounded-full ${bgColor} ${textColor} bg-opacity-85 hover:bg-opacity-100 px-4 py-1 transition-all`}>{props.text}</div>
+			<div className={`rounded-full ${bgColor} ${textColor} bg-opacity-100 hover:bg-opacity-85 px-4 py-1 transition-all`}>{props.text}</div>
 		</Link>
 	);
 }
