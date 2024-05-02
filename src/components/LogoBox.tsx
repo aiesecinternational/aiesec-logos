@@ -59,6 +59,10 @@ export default function LogoBox(props:Props) {
 		bg = "bg-gradient-to-br from-[#7c4dff] to-[#651fff]";
 	}
 	
+	if (props.background === "green") {
+		bg = "bg-gradient-to-br from-[#00c16e] to-[#00a85d]";
+	}
+	
 	if (props.background === "asia-pacific") {
 		bg = "bg-gradient-to-br from-[#30c39e] to-[#21A285]";
 	}
