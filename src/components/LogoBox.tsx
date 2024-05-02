@@ -52,7 +52,7 @@ export default function LogoBox(props:Props) {
 	}
 	
 	if (props.background === "americas") {
-		bg = "bg-gradient-to-br from-[#bb0d00] to-[#961311]";
+		bg = "bg-gradient-to-br from-[#bb0d00] to-[#e72e1f]";
 	}
 	
 	if (props.background === "purple") {
@@ -72,8 +72,10 @@ export default function LogoBox(props:Props) {
 	}
 	
 	if (props.background === "middle-east-and-africa") {
-		bg = "bg-gradient-to-br from-[#e69138] to-[#e69138]";
+		bg = "bg-gradient-to-br from-[#e69138] to-[#F38F27]";
 	}
+	
+	let color = "#f38f27"
 	
 	return (
 		<div>

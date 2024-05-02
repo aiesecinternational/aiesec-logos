@@ -57,13 +57,15 @@ export default function MobileLogoBox(props:Props) {
 	return (
 		<div>
 			<Link href={props.url}>
-				<div className={`relative flex flex-col items-center justify-center ${bg} p-0 w-72 h-72 rounded-md border-2 border-gray-300 ${showOnDesktop ? "" : "md:hidden"}`}>
+				<div className={`relative flex flex-col items-center justify-center ${bg} p-0 w-72 h-72 rounded-md border-2 border-gray-300 ${showOnDesktop ? "" : "md:hidden"} `}>
 					<Image src={props.image}
 						   width={height}
 						   height={200}
 						   alt={props.name}
 						   priority={priority}
 					/>
+					
+					<div className={`hidden md:flex text-xs font-bold mt-10 rounded-full ${props.background === "white-plain" ? "bg-blue-600 text-white" : "bg-white text-gray-800"} bg-opacity-100 hover:bg-opacity-85 px-4 py-1 transition-all absolute bottom-3`}>Click to open</div>
 				</div>
 			</Link>
 		</div>
