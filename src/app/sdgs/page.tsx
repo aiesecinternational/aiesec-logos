@@ -23,10 +23,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_01.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/1 No-Poverty.gif",
             }
         ],
         "sdg-2-color": [
@@ -37,10 +33,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_02.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/2-Zero-Hunger.gif",
             }
         ],
         "sdg-3-color": [
@@ -51,10 +43,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_03.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/3-Good-Health-and-Well-being.gif",
             }
         ],
         "sdg-4-color": [
@@ -65,10 +53,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_04.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/4-Quality-Education.gif",
             }
         ],
         "sdg-5-color": [
@@ -79,10 +63,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_05.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/5-Gender-Equality.gif"
             }
         ],
         "sdg-6-color": [
@@ -93,10 +73,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_06.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/6-Clean-Water-and-Sanitation.gif"
             }
         ],
         "sdg-7-color": [
@@ -107,10 +83,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_07.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/7-Afforable-and-Clean-Energy.gif"
             }
         ],
         "sdg-8-color": [
@@ -121,10 +93,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_08.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/8-Decent-Work-and-Economic-Growth.gif"
             }
         ],
         "sdg-9-color": [
@@ -135,10 +103,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_09.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/9-Industry-2.gif"
             }
         ],
         "sdg-10-color": [
@@ -149,10 +113,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_10.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/10 Reduced-Inequalities.gif"
             }
         ],
         "sdg-11-color": [
@@ -163,10 +123,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_11.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/11 Sustainable-Cities.gif"
             }
         ],
         "sdg-12-color": [
@@ -177,10 +133,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_12.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/12-Responsible-Consumption.gif"
             }
         ],
         "sdg-13-color": [
@@ -191,10 +143,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_13.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/13-Climate-Action.gif"
             }
         ],
         "sdg-14-color": [
@@ -205,10 +153,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_14.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/14-Life-Below-Water.gif"
             }
         ],
         "sdg-15-color": [
@@ -219,10 +163,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_15.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/15-Life-on-Land.gif"
             }
         ],
         "sdg-16-color": [
@@ -233,10 +173,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_16.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/16-Peace.gif"
             }
         ],
         "sdg-17-color": [
@@ -247,10 +183,6 @@ export default function Home() {
             {
                 fileType: "JPG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/TGG_Icon_Color_17.jpg",
-            },
-            {
-                fileType: "GIF",
-                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/17-Partnership.gif"
             }
         ],
         "global-goals-logo-color": [

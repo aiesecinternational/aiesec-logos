@@ -18,7 +18,7 @@ type Props = {
 export default function LogoBox(props:Props) {
 	let bg = "bg-gradient-to-br from-white to-gray-100";
 	const size = props.size ? props.size : "medium";
-	const height = size === "small" ? "500" : size === "medium" ? "200" : "500";
+	const height = size === "small" ? "100" : size === "medium" ? "200" : "400";
 	const priority = props.priority ? props.priority : false;
 	const hideOnMobile = props.hideOnMobile ? "hidden md:flex" : "";
 	const variant = props.variant ? props.variant : "large";
@@ -80,7 +80,7 @@ export default function LogoBox(props:Props) {
 			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 pb-5 ${variant == "large" ? "w-72 h-72" : "w-32 h-32 md:w-48 md:h-48 pt-5"} rounded-md border-2 border-gray-300 ${hideOnMobile}`}>
 				<Image src={props.downloads.find(download => download.fileType === "PNG" || download.fileType === "White" || download.fileType == "JPG")!.url}
 					   width={height}
-					   height={height}
+					   height={200}
 					   alt={props.name}
 					   priority={priority}
 					   className={"rounded-sm"}
