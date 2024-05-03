@@ -1,6 +1,7 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
 import MoreVariantsBox from "@/components/MoreVariantsBox";
+import ColorBox from "@/components/ColorBox";
 
 export default function Home() {
     const logos = {
@@ -136,20 +137,33 @@ export default function Home() {
     
     return (
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
-            <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
+            <div className={"flex flex-col space-y-20 h-full w-full items-center justify-center"}>
                 
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"} buttonColor={"white"}/>
-                    <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"} buttonColor={"black"}/>
-                    <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]} background={"black"} buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"}
+                             buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"}
+                             buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"}
+                             buttonColor={"black"}/>
+                    <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]}
+                             background={"black"} buttonColor={"white"}/>
                 </LogoCategory>
                 
+                <div className={`flex-col md:flex-row bg-white p-5 rounded-md border-2 border-gray-300 md:space-x-5 space-y-5 md:space-y-0 hidden md:flex`}>
+                    <ColorBox variant={"blue"}/>
+                </div>
+                
+                
                 <LogoCategory>
-                    <LogoBox name={"Powered by AIESEC Blue"} downloads={logos["powered-by-aiesec-blue"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"Powered by AIESEC White Blue"} downloads={logos["powered-by-aiesec-white-blue"]} background={"blue"} buttonColor={"white"}/>
-                    <LogoBox name={"Powered by AIESEC Black"} downloads={logos["powered-by-aiesec-black"]} background={"white"} buttonColor={"black"}/>
-                    <LogoBox name={"Powered by AIESEC White Black"} downloads={logos["powered-by-aiesec-white-black"]} background={"black"} buttonColor={"white"}/>
+                    <LogoBox name={"Powered by AIESEC Blue"} downloads={logos["powered-by-aiesec-blue"]}
+                             background={"white"} buttonColor={"blue"}/>
+                    <LogoBox name={"Powered by AIESEC White Blue"} downloads={logos["powered-by-aiesec-white-blue"]}
+                             background={"blue"} buttonColor={"white"}/>
+                    <LogoBox name={"Powered by AIESEC Black"} downloads={logos["powered-by-aiesec-black"]}
+                             background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Powered by AIESEC White Black"} downloads={logos["powered-by-aiesec-white-black"]}
+                             background={"black"} buttonColor={"white"}/>
                 </LogoCategory>
             
             </div>
