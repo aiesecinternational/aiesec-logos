@@ -201,9 +201,9 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gte-horizontal-color"]} background={"white"} buttonColor={"orange"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gte-horizontal-white"]} background={"orange"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gte-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gte-horizontal-color"]} background={"white"} buttonColor={"orange"} priority={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gte-horizontal-white"]} background={"orange"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gte-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

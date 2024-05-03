@@ -147,9 +147,9 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Youth Speak Logo Horizontal Color"} downloads={logos["ys-horizontal-color"]} background={"white"} buttonColor={"purple"}/>
-                    <LogoBox name={"Youth Speak Logo Horizontal White"} downloads={logos["ys-horizontal-white"]} background={"purple"} buttonColor={"white"}/>
-                    <LogoBox name={"Youth Speak Logo Horizontal Black"} downloads={logos["ys-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Youth Speak Logo Horizontal Color"} downloads={logos["ys-horizontal-color"]} background={"white"} buttonColor={"purple"} priority={true}/>
+                    <LogoBox name={"Youth Speak Logo Horizontal White"} downloads={logos["ys-horizontal-white"]} background={"purple"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"Youth Speak Logo Horizontal Black"} downloads={logos["ys-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

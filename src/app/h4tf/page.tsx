@@ -75,9 +75,9 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Heading for the Future Logo Horizontal Color"} downloads={logos["h4tf-horizontal-color"]} background={"white"} buttonColor={"green"}/>
-                    <LogoBox name={"Heading for the Future Logo Horizontal White"} downloads={logos["h4tf-horizontal-white"]} background={"green"} buttonColor={"white"}/>
-                    <LogoBox name={"Heading for the Future Logo Horizontal Black"} downloads={logos["h4tf-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Heading for the Future Logo Horizontal Color"} downloads={logos["h4tf-horizontal-color"]} background={"white"} buttonColor={"green"} priority={true}/>
+                    <LogoBox name={"Heading for the Future Logo Horizontal White"} downloads={logos["h4tf-horizontal-white"]} background={"green"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"Heading for the Future Logo Horizontal Black"} downloads={logos["h4tf-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

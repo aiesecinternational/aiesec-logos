@@ -99,13 +99,13 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Way Logo"} downloads={logos["aiesec-2025"]} background={"white-plain"} buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Way Logo"} downloads={logos["aiesec-2025"]} background={"white-plain"} buttonColor={"blue"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Empowering Youth Leaders Long Logo"} downloads={logos["empowering-youth-leaders-long-logo"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"Building A Long Lasting AIESEC"} downloads={logos["building-a-long-lasting-aiesec-long-logo"]} background={"white"} buttonColor={"green"}/>
-                    <LogoBox name={"Developing Purposeful Partnerships"} downloads={logos["developing-purposeful-partnerships-long-logo"]} background={"white"} buttonColor={"orange"}/>
+                    <LogoBox name={"Empowering Youth Leaders Long Logo"} downloads={logos["empowering-youth-leaders-long-logo"]} background={"white"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"Building A Long Lasting AIESEC"} downloads={logos["building-a-long-lasting-aiesec-long-logo"]} background={"white"} buttonColor={"green"} priority={true}/>
+                    <LogoBox name={"Developing Purposeful Partnerships"} downloads={logos["developing-purposeful-partnerships-long-logo"]} background={"white"} buttonColor={"orange"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

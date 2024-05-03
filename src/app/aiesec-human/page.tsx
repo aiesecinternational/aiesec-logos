@@ -1,6 +1,5 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
-import MoreVariantsBox from "@/components/MoreVariantsBox";
 
 export default function Home() {
     const logos = {
@@ -62,8 +61,8 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Human Logo Blue"} downloads={logos["aiesec-human-blue"]} background={"blue-plain"} buttonColor={"white"}/>
+                    <LogoBox name={"AIESEC Human Logo White"} downloads={logos["aiesec-human-white"]} background={"white-plain"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"AIESEC Human Logo Blue"} downloads={logos["aiesec-human-blue"]} background={"blue-plain"} buttonColor={"white"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

@@ -139,13 +139,13 @@ export default function Home() {
                 
                 <LogoCategory>
                     <LogoBox name={"AIESEC Logo Blue"} downloads={logos["aiesec-blue"]} background={"white"}
-                             buttonColor={"blue"}/>
+                             buttonColor={"blue"} priority={true}/>
                     <LogoBox name={"AIESEC Logo White Blue"} downloads={logos["aiesec-white-blue"]} background={"blue"}
-                             buttonColor={"white"}/>
+                             buttonColor={"white"} priority={true}/>
                     <LogoBox name={"AIESEC Logo Black"} downloads={logos["aiesec-black"]} background={"white"}
-                             buttonColor={"black"}/>
+                             buttonColor={"black"} priority={true}/>
                     <LogoBox name={"AIESEC Logo White Black"} downloads={logos["aiesec-white-black"]}
-                             background={"black"} buttonColor={"white"}/>
+                             background={"black"} buttonColor={"white"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

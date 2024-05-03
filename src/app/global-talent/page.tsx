@@ -1,6 +1,5 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
-import MoreVariantsBox from "@/components/MoreVariantsBox";
 
 export default function Home() {
     const logos = {
@@ -202,9 +201,9 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"}/>
-                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Color"} downloads={logos["gta-horizontal-color"]} background={"white"} buttonColor={"teal"} priority={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal White"} downloads={logos["gta-horizontal-white"]} background={"teal"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"Global Teacher Logo Horizontal Black"} downloads={logos["gta-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

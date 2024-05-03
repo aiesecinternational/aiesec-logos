@@ -105,14 +105,14 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Way Logo"} downloads={logos["aiesec-way"]} background={"white-plain"} buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Way Logo"} downloads={logos["aiesec-way"]} background={"white-plain"} buttonColor={"blue"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"AIESEC Why"} downloads={logos["aiesec-why"]} background={"white-plain"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC Who"} downloads={logos["aiesec-who"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC How"} downloads={logos["aiesec-how"]} background={"white"} buttonColor={"blue"}/>
-                    <LogoBox name={"AIESEC What"} downloads={logos["aiesec-what"]} background={"white"} buttonColor={"blue"}/>
+                    <LogoBox name={"AIESEC Why"} downloads={logos["aiesec-why"]} background={"white-plain"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"AIESEC Who"} downloads={logos["aiesec-who"]} background={"white"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"AIESEC How"} downloads={logos["aiesec-how"]} background={"white"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"AIESEC What"} downloads={logos["aiesec-what"]} background={"white"} buttonColor={"blue"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>

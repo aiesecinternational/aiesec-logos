@@ -58,8 +58,8 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Americas Logo White"} downloads={logos["americas-white"]} background={"americas"} buttonColor={"white"}/>
-                    <LogoBox name={"Americas Logo Red"} downloads={logos["americas-red"]} background={"white"} buttonColor={"americas"}/>
+                    <LogoBox name={"Americas Logo White"} downloads={logos["americas-white"]} background={"americas"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"Americas Logo Red"} downloads={logos["americas-red"]} background={"white"} buttonColor={"americas"} priority={true}/>
                     <ColorBox variant={"americas"} size={"large"} />
                 </LogoCategory>
                 
