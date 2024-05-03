@@ -33,15 +33,18 @@ export default async function RootLayout({
                             <MantineProvider>{children}</MantineProvider>
                         </div>
                     </div>
-        
-        
-                    <div className={`flex text-gray-900 text-sm font-light justify-center p-3`}>
-                        <div>
-                            developed by AIESEC International with 💙 | To learn how to use the logos, visit
-                            <Link href={"https://drive.google.com/drive/folders/1uMvyMsiKSkNO78ZXm1KD1rNPAHnx7sNc?usp=drive_link"}>
-                                <span className={"px-2 py-1 ml-2 text-xs text-white rounded-full bg-blue-600"}>aies.ec/bluebook</span>
+                    
+                    
+                    <div className={`flex flex-col text-gray-900 text-sm font-light justify-center items-center p-3 space-y-5`}>
+                        <div className={`bg-gray-100 p-2 rounded-md px-5`}>To learn how to use the logos, visit
+                            <Link
+                                href={"https://drive.google.com/drive/folders/1uMvyMsiKSkNO78ZXm1KD1rNPAHnx7sNc?usp=drive_link"}>
+                                <span
+                                    className={"px-2 py-1 ml-2 text-xs text-white rounded-full bg-blue-600"}>aies.ec/bluebook</span>
                             </Link>
                         </div>
+                        
+                        <div>developed by AIESEC International with 💙</div>
                     </div>
                 </div>
             </body>

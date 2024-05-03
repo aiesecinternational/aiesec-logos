@@ -77,7 +77,7 @@ export default function LogoBox(props:Props) {
 	
 	return (
 		<div>
-			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 pb-5 ${variant == "large" ? "w-72 h-72" : "w-48 h-48 pt-5"} rounded-md border-2 border-gray-300 ${hideOnMobile}`}>
+			<div className={`relative flex flex-col items-center justify-center ${bg} p-0 pb-5 ${variant == "large" ? "w-72 h-72" : "w-32 h-32 md:w-48 md:h-48 pt-5"} rounded-md border-2 border-gray-300 ${hideOnMobile}`}>
 				<Image src={props.downloads.find(download => download.fileType === "PNG" || download.fileType === "White" || download.fileType == "JPG")!.url}
 					   width={height}
 					   height={height}
@@ -86,8 +86,8 @@ export default function LogoBox(props:Props) {
 					   className={"rounded-sm"}
 				/>
 				
-				<div className={"flex flex-row text-white font-bold text-xs absolute bottom-3 items-center justify-between space-x-5"}>
-					<div className={"flex flex-row space-x-2"}>
+				<div className={"flex flex-row text-white font-bold text-xs absolute bottom-3 items-center justify-between gap-5"}>
+					<div className={"flex flex-wrap space-x-2"}>
 						{props.downloads.map(download => (
 							<DownloadChip key={download.fileType} fileType={download.fileType} url={download.url} variant={props.buttonColor}/>
 						))}
