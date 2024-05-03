@@ -281,6 +281,11 @@ export default function Home() {
                     <MobileLogoBox name={"Regions"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/regions.png"} background={"white-plain"} url={"/regions"} showOnDesktop={true}/>
                 </LogoCategory>
                 
+                <LogoCategory spacing={true}>
+                    <MobileLogoBox name={"SDGs Grid"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/01_TGG_Grid_Icon_Color.png"} background={"white-plain"} url={"/sdgs"} showOnDesktop={true}/>
+                </LogoCategory>
+            
+            
             </div>
         </div>
     );
