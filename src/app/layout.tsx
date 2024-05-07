@@ -22,10 +22,11 @@ export default async function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head>
-                <ColorSchemeScript />
-            </head>
-            <body className={`${inter.className} bg-gradient-to-bl from-gray-100 to-gray-200 h-full w-full`}>
+        <head>
+            <meta name="google-site-verification" content="yrL8Kdy2ZkP7N9whYSSrkLTGun9If4PqT4sWW-8lAaI"/>
+            <ColorSchemeScript/>
+        </head>
+        <body className={`${inter.className} bg-gradient-to-bl from-gray-100 to-gray-200 h-full w-full`}>
                 <div className={`flex flex-col h-full w-full min-h-screen min-w-screen`}>
                     <Header/>
         
