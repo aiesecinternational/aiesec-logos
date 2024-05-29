@@ -1,5 +1,11 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Global Talent (GTa) Logos",
+    description: "Official logos for Global Talent (GTa)",
+};
 
 export default function Home() {
     const logos = {

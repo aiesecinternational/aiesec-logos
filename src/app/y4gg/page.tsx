@@ -1,5 +1,11 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Youth for Global Goals (Y4GG) logos",
+    description: "Official logos for Youth for Global Goals (Y4GG)",
+};
 
 export default function Home() {
     const logos = {

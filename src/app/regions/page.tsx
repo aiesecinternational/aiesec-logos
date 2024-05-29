@@ -102,7 +102,7 @@ export default function Home() {
                 <LogoCategory>
                     <LogoBox name={"Europe Logo Purple"} downloads={logos["europe-white"]} background={"europe"} buttonColor={"white"}/>
                     <LogoBox name={"Europe Logo White"} downloads={logos["europe-purple"]} background={"white"} buttonColor={"europe"}/>
-                    <LogoBox name={"Europe Logo White"} downloads={logos["europe-black"]} background={"white"} buttonColor={"europe"}/>
+                    <LogoBox name={"Europe Logo White"} downloads={logos["europe-black"]} background={"white"} buttonColor={"black"}/>
                     <ColorBox variant={"europe"} size={"large"} />
                 </LogoCategory>
                 

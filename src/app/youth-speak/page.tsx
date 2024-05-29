@@ -1,5 +1,11 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Youth Speak (YS) Logos",
+    description: "Official logos for AIESEC Youth Speak (YS)",
+};
 
 export default function Home() {
     const logos = {

@@ -1,5 +1,12 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Sustainable Development Goals (SDGs) logos",
+    description: "Official logos for the United Nations Sustainable Development Goals (SDGs)",
+};
+
 
 export default function Home() {
     const logos = {

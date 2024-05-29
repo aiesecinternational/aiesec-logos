@@ -1,5 +1,12 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Human",
+    description: "Official resources for the AIESEC Human."
+};
+
 
 export default function Home() {
     const logos = {

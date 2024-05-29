@@ -1,4 +1,11 @@
 import ColorBox from "@/components/ColorBox";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Colours",
+    description: "Official colours of the AIESEC brand",
+};
+
 
 export default function Colours() {
     

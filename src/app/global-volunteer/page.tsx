@@ -1,5 +1,11 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Global Volunteer (GV) Logos",
+    description: "Official logos for Global Volunteer (GV)",
+};
 
 export default function Home() {
     const logos = {

@@ -1,5 +1,11 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Heading for the Future Logos (H4TF)",
+    description: "Official logos for Heading for the Future (H4TF)",
+};
 
 export default function Home() {
     const logos = {
