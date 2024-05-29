@@ -1,6 +1,12 @@
 import LogoBox from "@/components/LogoBox";
 import LogoCategory from "@/components/LogoCategory";
 import ColorBox from "@/components/ColorBox";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "AIESEC Regional Logos",
+    description: "Official logos for the regions of AIESEC",
+};
 
 export default function Home() {
     const logos = {
@@ -28,16 +34,34 @@ export default function Home() {
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Reg_AP_white.png",
             }
         ],
-        "europe-purple": [
+        "europe-old-purple": [
             {
                 fileType: "PNG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Europe Purple.png",
             }
         ],
-        "europe-white": [
+        "europe-old-white": [
             {
                 fileType: "PNG",
                 url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Europe White.png",
+            }
+        ],
+        "europe-purple": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Europe United In Exchange Purple.png",
+            }
+        ],
+        "europe-white": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Europe United In Exchange White.png",
+            }
+        ],
+        "europe-black": [
+            {
+                fileType: "PNG",
+                url: "https://aiesec-logos.s3.eu-west-1.amazonaws.com/Europe United In Exchange Logo.png",
             }
         ],
         "middle-east-and-africa-orange": [
@@ -70,10 +94,18 @@ export default function Home() {
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Europe Logo Purple"} downloads={logos["europe-white"]} background={"europe"} buttonColor={"white"}/>
-                    <LogoBox name={"Europe Logo White"} downloads={logos["europe-purple"]} background={"white"} buttonColor={"europe"}/>
+                    <LogoBox name={"Europe Old Logo Purple"} downloads={logos["europe-old-white"]} background={"europe"} buttonColor={"white"}/>
+                    <LogoBox name={"Europe Old Logo White"} downloads={logos["europe-old-purple"]} background={"white"} buttonColor={"europe"}/>
                     <ColorBox variant={"europe"} size={"large"} />
                 </LogoCategory>
+                
+                <LogoCategory>
+                    <LogoBox name={"Europe Logo Purple"} downloads={logos["europe-white"]} background={"europe"} buttonColor={"white"}/>
+                    <LogoBox name={"Europe Logo White"} downloads={logos["europe-purple"]} background={"white"} buttonColor={"europe"}/>
+                    <LogoBox name={"Europe Logo White"} downloads={logos["europe-black"]} background={"white"} buttonColor={"europe"}/>
+                    <ColorBox variant={"europe"} size={"large"} />
+                </LogoCategory>
+                
                 
                 <LogoCategory>
                     <LogoBox name={"Middle East & Africa Logo Orange"} downloads={logos["middle-east-and-africa-white"]} background={"middle-east-and-africa"} buttonColor={"white"}/>
