@@ -33,9 +33,9 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-center justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-color"]} background={"white"} buttonColor={"blue"} priority={true}/>
-                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-white"]} background={"blue"} buttonColor={"white"} priority={true}/>
-                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-black"]} background={"white"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-color"]} background={"black"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-white"]} background={"white"} buttonColor={"blue"} priority={true}/>
+                    <LogoBox name={"SDGs Grid Color"} downloads={logos["y4gg-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
             </div>
         </div>
