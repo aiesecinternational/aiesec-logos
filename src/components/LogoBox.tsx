@@ -7,8 +7,8 @@ type Props = {
 		fileType: string,
 		url: string
 	}[]
-	background: "blue" | "white" | "black" | "teal" | "orange" | "red" | "blue-plain" | "white-plain" | "americas" | "purple" | "green" | "asia-pacific" | "europe" | "middle-east-and-africa"
-	buttonColor: "blue" | "white" | "black" | "teal" | "orange" | "red" | "purple" | "green" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa"
+	background: "blue" | "white" | "black" | "teal" | "orange" | "red" | "blue-plain" | "white-plain" | "americas" | "purple" | "green" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple" 
+	buttonColor: "blue" | "white" | "black" | "teal" | "orange" | "red" | "purple" | "green" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple" 
 	size?: "small" | "medium" | "large"
 	priority?: boolean
 	hideOnMobile?: boolean
@@ -73,6 +73,10 @@ export default function LogoBox(props:Props) {
 	
 	if (props.background === "middle-east-and-africa") {
 		bg = "bg-gradient-to-br from-[#e69138] to-[#F38F27]";
+	}
+
+	if (props.background === "p4p-purple") {
+		bg = "bg-gradient-to-br from-[#5800bf] to-[#0029e9]";
 	}
 	
 	return (
