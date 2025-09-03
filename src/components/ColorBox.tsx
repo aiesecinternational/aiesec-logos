@@ -82,6 +82,12 @@ export default function ColorBox(props: Props) {
 		textColor = "text-white";
 		hex = "#e69138";
 	}
+
+	if (props.variant === "p4p-purple") {
+		bgColor = "bg-[#5800bf]";
+		textColor = "text-white";
+		hex = "#5800bf";
+	}
 	
 	return (
 		<div className={`flex flex-col space-y-5 w-full ${size == "large" ? "md:w-72 h-72" : "md:w-32 h-32"} ${bgColor} rounded-md items-center justify-center text-sm ${textColor}`}>
