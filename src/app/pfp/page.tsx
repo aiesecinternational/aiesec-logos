@@ -52,27 +52,17 @@ export default function Home() {
         <div className={"flex flex-col space-y-5 items-center justify-center"}>
             <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
                 <LogoCategory>
-                    <LogoBox name={"Heading for the Future Logo Horizontal Color"} downloads={logos["h4tf-horizontal-color"]} background={"white"} buttonColor={"green"} priority={true}/>
-                    <LogoBox name={"Heading for the Future Logo Horizontal White"} downloads={logos["h4tf-horizontal-white"]} background={"green"} buttonColor={"white"} priority={true}/>
-                    <LogoBox name={"Heading for the Future Logo Horizontal Black"} downloads={logos["h4tf-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
+                    <LogoBox name={"People for People Logo Horizontal Color"} downloads={logos["p4p-horizontal-color"]} background={"white"} buttonColor={"green"} priority={true}/>
+                    <LogoBox name={"People for People Logo Horizontal White"} downloads={logos["p4p-horizontal-white"]} background={"green"} buttonColor={"white"} priority={true}/>
+                    <LogoBox name={"People for People Logo Horizontal Black"} downloads={logos["p4p-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
                 </LogoCategory>
                 
                 <LogoCategory>
-                    <LogoBox name={"Heading for the Future Logo Vertical Color"} downloads={logos["h4tf-vertical-color"]} background={"white"} buttonColor={"green"} size={"small"}/>
-                    <LogoBox name={"Heading for the Future Logo Vertical White"} downloads={logos["h4tf-vertical-white"]} background={"green"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Heading for the Future Logo Vertical Black"} downloads={logos["h4tf-vertical-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
+                    <LogoBox name={"People for People Logo Vertical Color"} downloads={logos["p4p-icon-color"]} background={"white"} buttonColor={"green"} size={"small"}/>
+                    <LogoBox name={"People for People Logo Vertical White"} downloads={logos["p4p-icon-white"]} background={"green"} buttonColor={"white"} size={"small"}/>
+                    <LogoBox name={"People for People Logo Vertical Black"} downloads={logos["p4p-icon-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
                 </LogoCategory>
                 
-                <LogoCategory>
-                    <LogoBox name={"Heading for the Future Logo Color"} downloads={logos["h4tf-logo-color"]} background={"white"} buttonColor={"green"} size={"small"}/>
-                    <LogoBox name={"Heading for the Future Logo White"} downloads={logos["h4tf-logo-white"]} background={"green"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"Heading for the Future Logo Black"} downloads={logos["h4tf-logo-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
-                </LogoCategory>
-                
-                <LogoCategory>
-                    <LogoBox name={"Heading for the Future Watermark Color"} downloads={logos["h4tf-watermark-color"]} background={"white"} buttonColor={"green"} size={"small"}/>
-                    <LogoBox name={"Heading for the Future Watermark White"} downloads={logos["h4tf-watermark-white"]} background={"green"} buttonColor={"white"} size={"small"}/>
-                </LogoCategory>
             </div>
         </div>
     );
