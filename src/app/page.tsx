@@ -284,6 +284,7 @@ export default function Home() {
                 <LogoCategory spacing={true}>
                     <MobileLogoBox name={"SDGs Grid"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/Y4GG-03.png"} background={"white-plain"} url={"/y4gg"} showOnDesktop={true}/>
                     <MobileLogoBox name={"Youth for Global Goals Logo Color"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/01_TGG_Grid_Icon_Color.png"} background={"white-plain"} url={"/sdgs"} showOnDesktop={true}/>
+                    <MobileLogoBox name={"People for People"} image={"https://aiesec-logos.s3.eu-west-1.amazonaws.com/PFP_Color_Logo.png"} background={"white-plain"} url={"/pfp"} showOnDesktop={true}/>
                 </LogoCategory>
             
             
