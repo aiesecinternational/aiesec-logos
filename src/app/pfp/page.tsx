@@ -49,28 +49,69 @@ export default function Home() {
         ]
     }
     
-    return (
-        <div className={"flex flex-col space-y-5 items-center justify-center"}>
-            <div className={"flex flex-col space-y-20 h-full w-full items-start justify-center"}>
-                <LogoCategory>
-                    <LogoBox name={"People for People Logo Horizontal Color"} downloads={logos["p4p-horizontal-color"]} background={"white"} buttonColor={"purple"} priority={true}/>
-                    <LogoBox name={"People for People Logo Horizontal White"} downloads={logos["p4p-horizontal-white"]} background={"purple"} buttonColor={"white"} priority={true}/>
-                    <LogoBox name={"People for People Logo Horizontal Black"} downloads={logos["p4p-horizontal-black"]} background={"white"} buttonColor={"black"} priority={true}/>
-                </LogoCategory>
-                
-                <LogoCategory>
-                    <LogoBox name={"People for People Logo Vertical Color"} downloads={logos["p4p-icon-color"]} background={"white"} buttonColor={"purple"} size={"small"}/>
-                    <LogoBox name={"People for People Logo Vertical White"} downloads={logos["p4p-icon-white"]} background={"purple"} buttonColor={"white"} size={"small"}/>
-                    <LogoBox name={"People for People Logo Vertical Black"} downloads={logos["p4p-icon-black"]} background={"white"} buttonColor={"black"} size={"small"}/>
-                </LogoCategory>
+return (
+  <div className="flex flex-col space-y-5 items-center justify-center">
+    <div className="flex flex-col space-y-20 h-full w-full items-center justify-center">
+      
+      <LogoCategory>
+        <LogoBox 
+          name={"People for People Logo Horizontal Color"} 
+          downloads={logos["p4p-horizontal-color"]} 
+          background={"white"} 
+          buttonColor={"purple"} 
+          priority={true}
+        />
+        <LogoBox 
+          name={"People for People Logo Horizontal White"} 
+          downloads={logos["p4p-horizontal-white"]} 
+          background={"purple"} 
+          buttonColor={"white"} 
+          priority={true}
+        />
+        <LogoBox 
+          name={"People for People Logo Horizontal Black"} 
+          downloads={logos["p4p-horizontal-black"]} 
+          background={"white"} 
+          buttonColor={"black"} 
+          priority={true}
+        />
+      </LogoCategory>
 
-                <div className={`flex-col md:flex-row bg-white p-5 rounded-md border-2 border-gray-300 md:space-x-5 space-y-5 md:space-y-0 hidden md:flex`}>
-                    <ColorBox variant={"p4p-purple"}/>
-                    <ColorBox variant={"teal"}/>
-                    <ColorBox variant={"orange"}/>
-                </div>
-                
-            </div>
+      <LogoCategory>
+        <LogoBox 
+          name={"People for People Logo Vertical Color"} 
+          downloads={logos["p4p-icon-color"]} 
+          background={"white"} 
+          buttonColor={"p4p-purple"} 
+          size={"small"} 
+        />
+        <LogoBox 
+          name={"People for People Logo Vertical White"} 
+          downloads={logos["p4p-icon-white"]} 
+          background={"p4p-purple"} 
+          buttonColor={"white"} 
+          size={"small"} 
+        />
+        <LogoBox 
+          name={"People for People Logo Vertical Black"} 
+          downloads={logos["p4p-icon-black"]} 
+          background={"white"} 
+          buttonColor={"black"} 
+          size={"small"} 
+        />
+      </LogoCategory>
+
+      {/* ColorBox section centered */}
+      <div className="flex justify-center w-full">
+        <div className="flex-col md:flex-row bg-white p-5 rounded-md border-2 border-gray-300 md:space-x-5 space-y-5 md:space-y-0 hidden md:flex">
+          <ColorBox variant={"p4p-purple"} />
+          <ColorBox variant={"p4p-bright-blue"} />
+          <ColorBox variant={"p4p-dark-blue"} />
         </div>
-    );
+      </div>
+
+    </div>
+  </div>
+);
+
 }
