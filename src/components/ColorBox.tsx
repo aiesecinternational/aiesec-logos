@@ -1,7 +1,7 @@
 import CopyChip from "@/components/CopyChip";
 
 type Props = {
-	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple"
+	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple" | "p4p-bright-blue" | "p4p-dark-blue"
 	size?: "small" | "medium" | "large"
 }
 
@@ -87,6 +87,18 @@ export default function ColorBox(props: Props) {
 		bgColor = "bg-[#5800bf]";
 		textColor = "text-white";
 		hex = "#5800bf";
+	}
+
+	if (props.variant === "p4p-bright-blue") {
+		bgColor = "bg-[#0029e9]";
+		textColor = "text-white";
+		hex = "#0029e9";
+	}
+
+	if (props.variant === "p4p-dark-blue") {
+		bgColor = "bg-[#002caa]";
+		textColor = "text-white";
+		hex = "#002caa";
 	}
 	
 	return (
