@@ -1,7 +1,7 @@
 import CopyChip from "@/components/CopyChip";
 
 type Props = {
-	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa"
+	variant: "blue" | "teal" | "orange" | "red" | "purple" | "green" | "yellow" | "dark-gray" | "light-gray" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple"
 	size?: "small" | "medium" | "large"
 }
 
