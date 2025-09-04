@@ -68,19 +68,16 @@ export default function DownloadChip(props: Props) {
 	if (props.variant === "p4p-purple") {
 		bgColor = "bg-[#5800bf]";
 		textColor = "text-white";
-		hex = "#5800bf";
 	}
 
 	if (props.variant === "p4p-bright-blue") {
 		bgColor = "bg-[#0029e9]";
 		textColor = "text-white";
-		hex = "#0029e9";
 	}
 
 	if (props.variant === "p4p-dark-blue") {
 		bgColor = "bg-[#002caa]";
 		textColor = "text-white";
-		hex = "#002caa";
 	}
 	
 	return (
