@@ -58,13 +58,13 @@ return (
           name={"People for People Logo Horizontal Color"} 
           downloads={logos["p4p-horizontal-color"]} 
           background={"white"} 
-          buttonColor={"purple"} 
+          buttonColor={"p4p-purple"} 
           priority={true}
         />
         <LogoBox 
           name={"People for People Logo Horizontal White"} 
           downloads={logos["p4p-horizontal-white"]} 
-          background={"purple"} 
+          background={"p4p-purple"} 
           buttonColor={"white"} 
           priority={true}
         />
