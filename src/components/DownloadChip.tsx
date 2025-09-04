@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
 	fileType: string
 	url: string
-	variant: "blue" | "white" | "black" | "teal" | "orange" | "red" | "purple" | "green" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa"
+	variant: "blue" | "white" | "black" | "teal" | "orange" | "red" | "purple" | "green" | "americas" | "asia-pacific" | "europe" | "middle-east-and-africa" | "p4p-purple" | "p4p-bright-blue" | "p4p-dark-blue"
 }
 
 export default function DownloadChip(props: Props) {
@@ -63,6 +63,24 @@ export default function DownloadChip(props: Props) {
 	if (props.variant === "middle-east-and-africa") {
 		bgColor = "bg-[#e69138]";
 		textColor = "text-white";
+	}
+
+	if (props.variant === "p4p-purple") {
+		bgColor = "bg-[#5800bf]";
+		textColor = "text-white";
+		hex = "#5800bf";
+	}
+
+	if (props.variant === "p4p-bright-blue") {
+		bgColor = "bg-[#0029e9]";
+		textColor = "text-white";
+		hex = "#0029e9";
+	}
+
+	if (props.variant === "p4p-dark-blue") {
+		bgColor = "bg-[#002caa]";
+		textColor = "text-white";
+		hex = "#002caa";
 	}
 	
 	return (
